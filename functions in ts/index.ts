@@ -24,4 +24,26 @@ let logInFunc = (name: string, email: string, isPaid: boolean = false) => {}
 
 logInFunc("h","d@d.in")
 
+const getHello = (s: string):string => {
+    return ""
+}
+
+const heros = ["thor","spiderman","ironman"]
+// const heros = [1,2,3]
+
+heros.map((hero):string => {
+    return `hero is ${hero}`
+    // return 1
+})
+
+function consoleError(errMsg: string): void{
+    console.log(errMsg)
+    // return 1
+}
+
+function handleErr(msg:string):never{
+    throw new Error(msg)
+}
+
+
 export {}

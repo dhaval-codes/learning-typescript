@@ -19,3 +19,19 @@ var logInFunc = function (name, email, isPaid) {
     if (isPaid === void 0) { isPaid = false; }
 };
 logInFunc("h", "d@d.in");
+var getHello = function (s) {
+    return "";
+};
+var heros = ["thor", "spiderman", "ironman"];
+// const heros = [1,2,3]
+heros.map(function (hero) {
+    return "hero is ".concat(hero);
+    // return 1
+});
+function consoleError(errMsg) {
+    console.log(errMsg);
+    // return 1
+}
+function handleErr(msg) {
+    throw new Error(msg);
+}
