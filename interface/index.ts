@@ -8,8 +8,17 @@ interface User {
     getCoupon(cuponName:string,value:number):number
 }
 
-const dhaval:User = {
+interface User {
+    githubToken: string
+}
+
+interface Admin extends User {
+    role: "admin" | "ta" | "learner"
+}
+
+const dhaval:Admin = {
     dbID: 22,
+    role: "admin",
     email:"d@d.in",
     userID: 2211,
     startTrail: () => {
@@ -18,6 +27,8 @@ const dhaval:User = {
     getCoupon: (name: "dhaval", off: 40) =>{
         return off
     }
+    ,
+    githubToken: "github baby"
 }
 
 dhaval.email = "dhaval@j.in"
